@@ -9,17 +9,19 @@
 /* Begin PBXBuildFile section */
 		1505EA1B25C888FD009A9DE5 /* Twitter_cloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505EA1A25C888FD009A9DE5 /* Twitter_cloneApp.swift */; };
 		1505EA1D25C888FD009A9DE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505EA1C25C888FD009A9DE5 /* ContentView.swift */; };
-		1505EA1F25C888FE009A9DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1505EA1E25C888FE009A9DE5 /* Assets.xcassets */; };
 		1505EA2225C888FE009A9DE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1505EA2125C888FE009A9DE5 /* Preview Assets.xcassets */; };
+		15979C5D25CA586C00F1B024 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15979C5C25CA586C00F1B024 /* FeedView.swift */; };
+		15979C6125CA5D5400F1B024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15979C6025CA5D5400F1B024 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1505EA1725C888FD009A9DE5 /* Twitter-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twitter-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1505EA1A25C888FD009A9DE5 /* Twitter_cloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twitter_cloneApp.swift; sourceTree = "<group>"; };
 		1505EA1C25C888FD009A9DE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1505EA1E25C888FE009A9DE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1505EA2125C888FE009A9DE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1505EA2325C888FE009A9DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15979C5C25CA586C00F1B024 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		15979C6025CA5D5400F1B024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../CourseResources/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +54,11 @@
 		1505EA1925C888FD009A9DE5 /* Twitter-clone */ = {
 			isa = PBXGroup;
 			children = (
+				15979C5B25CA582C00F1B024 /* ViewModel */,
+				15979C5A25CA581900F1B024 /* View */,
+				15979C5925CA57F800F1B024 /* Model */,
 				1505EA1A25C888FD009A9DE5 /* Twitter_cloneApp.swift */,
-				1505EA1C25C888FD009A9DE5 /* ContentView.swift */,
-				1505EA1E25C888FE009A9DE5 /* Assets.xcassets */,
+				15979C6025CA5D5400F1B024 /* Assets.xcassets */,
 				1505EA2325C888FE009A9DE5 /* Info.plist */,
 				1505EA2025C888FE009A9DE5 /* Preview Content */,
 			);
@@ -67,6 +71,29 @@
 				1505EA2125C888FE009A9DE5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15979C5925CA57F800F1B024 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15979C5A25CA581900F1B024 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1505EA1C25C888FD009A9DE5 /* ContentView.swift */,
+				15979C5C25CA586C00F1B024 /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15979C5B25CA582C00F1B024 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1505EA2225C888FE009A9DE5 /* Preview Assets.xcassets in Resources */,
-				1505EA1F25C888FE009A9DE5 /* Assets.xcassets in Resources */,
+				15979C6125CA5D5400F1B024 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1505EA1D25C888FD009A9DE5 /* ContentView.swift in Sources */,
+				15979C5D25CA586C00F1B024 /* FeedView.swift in Sources */,
 				1505EA1B25C888FD009A9DE5 /* Twitter_cloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
