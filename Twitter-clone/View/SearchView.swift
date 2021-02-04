@@ -14,11 +14,12 @@ struct SearchView: View {
         ScrollView{
             SearchBar(text: $serachText)
                 .padding()
-            VStack{
+            VStack(alignment: .leading){
                 ForEach(0..<19) { _ in
-                    Text("AF")
+                    HStack{Spacer()}
+                    UserCell()
                 }
-            }
+            }.padding(.leading)
         }
         .navigationBarTitle("Search")
         .navigationBarTitleDisplayMode(.inline)

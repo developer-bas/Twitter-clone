@@ -10,6 +10,7 @@
 		1505EA1B25C888FD009A9DE5 /* Twitter_cloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505EA1A25C888FD009A9DE5 /* Twitter_cloneApp.swift */; };
 		1505EA1D25C888FD009A9DE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505EA1C25C888FD009A9DE5 /* ContentView.swift */; };
 		1505EA2225C888FE009A9DE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1505EA2125C888FE009A9DE5 /* Preview Assets.xcassets */; };
+		1588BC4425CC8FA30070901F /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588BC4325CC8FA30070901F /* UserCell.swift */; };
 		15979C5D25CA586C00F1B024 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15979C5C25CA586C00F1B024 /* FeedView.swift */; };
 		15979C6525CA5F9F00F1B024 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15979C6425CA5F9F00F1B024 /* TweetCell.swift */; };
 		15979C7A25CB9F0800F1B024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15979C7925CB9F0800F1B024 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		1505EA1C25C888FD009A9DE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1505EA2125C888FE009A9DE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1505EA2325C888FE009A9DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1588BC4325CC8FA30070901F /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		15979C5C25CA586C00F1B024 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		15979C6425CA5F9F00F1B024 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		15979C7925CB9F0800F1B024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				15979C6425CA5F9F00F1B024 /* TweetCell.swift */,
 				15979C8125CBB82100F1B024 /* SearchView.swift */,
 				15979C8425CBBF2200F1B024 /* SearchBar.swift */,
+				1588BC4325CC8FA30070901F /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				1505EA1B25C888FD009A9DE5 /* Twitter_cloneApp.swift in Sources */,
 				15979C6525CA5F9F00F1B024 /* TweetCell.swift in Sources */,
 				15979C8525CBBF2200F1B024 /* SearchBar.swift in Sources */,
+				1588BC4425CC8FA30070901F /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
