@@ -11,8 +11,10 @@
 		1505EA1D25C888FD009A9DE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505EA1C25C888FD009A9DE5 /* ContentView.swift */; };
 		1505EA2225C888FE009A9DE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1505EA2125C888FE009A9DE5 /* Preview Assets.xcassets */; };
 		15979C5D25CA586C00F1B024 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15979C5C25CA586C00F1B024 /* FeedView.swift */; };
-		15979C6125CA5D5400F1B024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15979C6025CA5D5400F1B024 /* Assets.xcassets */; };
 		15979C6525CA5F9F00F1B024 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15979C6425CA5F9F00F1B024 /* TweetCell.swift */; };
+		15979C7A25CB9F0800F1B024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15979C7925CB9F0800F1B024 /* Assets.xcassets */; };
+		15979C8225CBB82100F1B024 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15979C8125CBB82100F1B024 /* SearchView.swift */; };
+		15979C8525CBBF2200F1B024 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15979C8425CBBF2200F1B024 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +24,10 @@
 		1505EA2125C888FE009A9DE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1505EA2325C888FE009A9DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15979C5C25CA586C00F1B024 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
-		15979C6025CA5D5400F1B024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../CourseResources/Assets.xcassets; sourceTree = "<group>"; };
 		15979C6425CA5F9F00F1B024 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		15979C7925CB9F0800F1B024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15979C8125CBB82100F1B024 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		15979C8425CBBF2200F1B024 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,7 @@
 				15979C5A25CA581900F1B024 /* View */,
 				15979C5925CA57F800F1B024 /* Model */,
 				1505EA1A25C888FD009A9DE5 /* Twitter_cloneApp.swift */,
-				15979C6025CA5D5400F1B024 /* Assets.xcassets */,
+				15979C7925CB9F0800F1B024 /* Assets.xcassets */,
 				1505EA2325C888FE009A9DE5 /* Info.plist */,
 				1505EA2025C888FE009A9DE5 /* Preview Content */,
 			);
@@ -88,6 +92,8 @@
 				1505EA1C25C888FD009A9DE5 /* ContentView.swift */,
 				15979C5C25CA586C00F1B024 /* FeedView.swift */,
 				15979C6425CA5F9F00F1B024 /* TweetCell.swift */,
+				15979C8125CBB82100F1B024 /* SearchView.swift */,
+				15979C8425CBBF2200F1B024 /* SearchBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,8 +162,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15979C7A25CB9F0800F1B024 /* Assets.xcassets in Resources */,
 				1505EA2225C888FE009A9DE5 /* Preview Assets.xcassets in Resources */,
-				15979C6125CA5D5400F1B024 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,10 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15979C8225CBB82100F1B024 /* SearchView.swift in Sources */,
 				1505EA1D25C888FD009A9DE5 /* ContentView.swift in Sources */,
 				15979C5D25CA586C00F1B024 /* FeedView.swift in Sources */,
 				1505EA1B25C888FD009A9DE5 /* Twitter_cloneApp.swift in Sources */,
 				15979C6525CA5F9F00F1B024 /* TweetCell.swift in Sources */,
+				15979C8525CBBF2200F1B024 /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

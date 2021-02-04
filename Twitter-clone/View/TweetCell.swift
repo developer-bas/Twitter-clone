@@ -9,8 +9,8 @@ import SwiftUI
 
 struct TweetCell: View {
     var body: some View {
-        VStack{
-            HStack(alignment: .top){
+        VStack(alignment: .leading){
+            HStack(alignment: .top,spacing: 12){
                 Image("batman")
                     .resizable()
                     .scaledToFill()
@@ -31,7 +31,7 @@ struct TweetCell: View {
                         
                         
                     }
-                    Text("It´s not necesary use this thext but i wanna somo dummy data to show")
+                    Text("It´s not necesary use this thext but i wanna somo dummy data ")
                 }
             }
             .padding(.bottom)
@@ -68,6 +68,7 @@ struct TweetCell: View {
             
             Divider()
         }
+        .padding(.leading, -16)
     }
 }
 
