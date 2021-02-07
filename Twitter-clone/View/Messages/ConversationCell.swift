@@ -26,6 +26,7 @@ struct ConversationCell: View {
                         .lineLimit(2)
                     
                 }
+                .foregroundColor(.black)
                 .padding(.trailing)
             }
             Divider()
