@@ -17,7 +17,7 @@ struct ConversationsView: View {
                 LazyVStack{
                     ForEach(0..<50) {  _ in
                         NavigationLink(
-                            destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+                            destination: ChatView(),
                             label: {
                                 ConversationCell()
                             })
