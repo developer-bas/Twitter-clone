@@ -16,7 +16,7 @@ struct ProfileHeaderView: View {
                 .clipped()
                 .frame(width: 120, height: 120)
                 .cornerRadius( 120 / 2)
-                .shadow(color: .black, radius: 6, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                .shadow(color: .black, radius: 6   , x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
                 Text("Bruce Wayne")
                     .font(.system(size: 16, weight: .semibold))
                     .padding(.top, 8)
@@ -44,6 +44,8 @@ struct ProfileHeaderView: View {
                 }
             }
             .padding()
+            
+            ProfileActionButtonView(isCurrentUser: false)
             
             Spacer()
             
