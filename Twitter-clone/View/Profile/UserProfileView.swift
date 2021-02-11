@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct UserProfileView: View {
+    
+    @State var selectedFilter : TweetFilterOption = .tweets
     var body: some View {
         ScrollView{
             VStack{
                 ProfileHeaderView()
                     .padding()
+                //FilterButtonView()
+                
+                FilterButtonView(selectedOption: $selectedFilter)
+                    .padding()
+                
+                ForEach(0..<9){ tweet in
+                    TweetCell().padding(20)
+                }
             }
             .navigationTitle("Batman")
         }
