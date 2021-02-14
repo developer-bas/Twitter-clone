@@ -13,7 +13,7 @@ struct NewTweetView: View {
     var body: some View {
         NavigationView{
             VStack {
-                HStack(alignment: .top){
+                HStack(alignment: .top ){
                     Image("batman")
                         .resizable()
                         .scaledToFill()
