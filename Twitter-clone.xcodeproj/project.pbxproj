@@ -18,6 +18,9 @@
 		1515AC6925DCD7E6000AF8F2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515AC6825DCD7E6000AF8F2 /* AuthViewModel.swift */; };
 		15281A4925DB6F660019709C /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15281A4825DB6F660019709C /* CustomSecureField.swift */; };
 		15281A4C25DB849C0019709C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15281A4B25DB849C0019709C /* ImagePicker.swift */; };
+		152E6C9D25DF810300695BA3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 152E6C9C25DF810300695BA3 /* Kingfisher */; };
+		152E6CA025DF816900695BA3 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E6C9F25DF816900695BA3 /* SearchViewModel.swift */; };
+		152E6CA325DF820B00695BA3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E6CA225DF820B00695BA3 /* Constants.swift */; };
 		153CB0D225D39D19004DE5F7 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153CB0D125D39D19004DE5F7 /* UserProfileView.swift */; };
 		153CB0D625D3A1D8004DE5F7 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153CB0D525D3A1D8004DE5F7 /* ProfileHeaderView.swift */; };
 		153CB0D925D3A1F7004DE5F7 /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153CB0D825D3A1F7004DE5F7 /* ProfileActionButtonView.swift */; };
@@ -54,6 +57,8 @@
 		1515AC6825DCD7E6000AF8F2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		15281A4825DB6F660019709C /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		15281A4B25DB849C0019709C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		152E6C9F25DF816900695BA3 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		152E6CA225DF820B00695BA3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		153CB0D125D39D19004DE5F7 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		153CB0D525D3A1D8004DE5F7 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		153CB0D825D3A1F7004DE5F7 /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
@@ -89,6 +94,7 @@
 				1515AC6525DC918A000AF8F2 /* FirebaseFirestore in Frameworks */,
 				1515AC6325DC918A000AF8F2 /* FirebaseAuth in Frameworks */,
 				1515AC6125DC918A000AF8F2 /* FirebaseStorage in Frameworks */,
+				152E6C9D25DF810300695BA3 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				156188F725D4F7F000339219 /* Views */,
+				152E6CA225DF820B00695BA3 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -226,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				1515AC6825DCD7E6000AF8F2 /* AuthViewModel.swift */,
+				152E6C9F25DF816900695BA3 /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -251,6 +259,7 @@
 				1515AC6025DC918A000AF8F2 /* FirebaseStorage */,
 				1515AC6225DC918A000AF8F2 /* FirebaseAuth */,
 				1515AC6425DC918A000AF8F2 /* FirebaseFirestore */,
+				152E6C9C25DF810300695BA3 /* Kingfisher */,
 			);
 			productName = "Twitter-clone";
 			productReference = 1505EA1725C888FD009A9DE5 /* Twitter-clone.app */;
@@ -281,6 +290,7 @@
 			mainGroup = 1505EA0E25C888FD009A9DE5;
 			packageReferences = (
 				1515AC5D25DC918A000AF8F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				152E6C9B25DF810300695BA3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 1505EA1825C888FD009A9DE5 /* Products */;
 			projectDirPath = "";
@@ -314,6 +324,7 @@
 				1561890225D8E52D00339219 /* RegistrationView.swift in Sources */,
 				1588BC5825D0F8DC0070901F /* MessageInputView.swift in Sources */,
 				1505EA1D25C888FD009A9DE5 /* ContentView.swift in Sources */,
+				152E6CA325DF820B00695BA3 /* Constants.swift in Sources */,
 				15979C5D25CA586C00F1B024 /* FeedView.swift in Sources */,
 				153CB0D625D3A1D8004DE5F7 /* ProfileHeaderView.swift in Sources */,
 				1588BC5B25D0F9B40070901F /* ChatView.swift in Sources */,
@@ -327,6 +338,7 @@
 				15979C6525CA5F9F00F1B024 /* TweetCell.swift in Sources */,
 				15B73E1C25D253EE00A530BB /* NewMessageView.swift in Sources */,
 				1515AC6925DCD7E6000AF8F2 /* AuthViewModel.swift in Sources */,
+				152E6CA025DF816900695BA3 /* SearchViewModel.swift in Sources */,
 				1588BC6125D1070C0070901F /* Message.swift in Sources */,
 				153CB0D225D39D19004DE5F7 /* UserProfileView.swift in Sources */,
 				1564643325DE31E30041E28B /* User.swift in Sources */,
@@ -535,6 +547,14 @@
 				minimumVersion = 7.6.0;
 			};
 		};
+		152E6C9B25DF810300695BA3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -557,6 +577,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1515AC5D25DC918A000AF8F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		152E6C9C25DF810300695BA3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 152E6C9B25DF810300695BA3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

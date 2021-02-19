@@ -59,7 +59,6 @@ class AuthViewModel: ObservableObject {
                         print("DEBUG ERROR \(error.localizedDescription)")
                         return
                     }
-                    
                     guard let user = result?.user else {return}
                     
                     let data = ["email":email,"username":username.lowercased(),"fullname":fullname, "profileImageUrl": profileImageURL,"uid": user.uid]
@@ -67,18 +66,9 @@ class AuthViewModel: ObservableObject {
                     Firestore.firestore().collection("users").document(user.uid).setData(data) { (_) in
                         self.userSession = user
                     }
-                    
                 }
-                
-                
             }
-            
         }
-        
-        
-        
-        
-   
     }
     func signOut(){
         self.userSession = nil
