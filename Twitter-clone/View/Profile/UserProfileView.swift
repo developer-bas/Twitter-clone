@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct UserProfileView: View {
+    let user : User
     
     @State var selectedFilter : TweetFilterOption = .tweets
     var body: some View {
         ScrollView{
             VStack{
-                ProfileHeaderView()
+                ProfileHeaderView(user: user)
                     .padding()
                 //FilterButtonView()
                 
@@ -29,8 +30,8 @@ struct UserProfileView: View {
     }
 }
 
-struct UserProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserProfileView()
-    }
-}
+//struct UserProfileView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UserProfileView()
+//    }
+//}

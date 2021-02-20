@@ -20,7 +20,7 @@ struct SearchView: View {
                     HStack{Spacer()}
                     
                     NavigationLink(
-                        destination: UserProfileView(),
+                        destination: UserProfileView(user: user),
                         label: {
                             UserCell(user: user)
                         }
