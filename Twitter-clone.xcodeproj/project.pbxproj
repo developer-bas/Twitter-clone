@@ -11,6 +11,8 @@
 		1505EA1D25C888FD009A9DE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505EA1C25C888FD009A9DE5 /* ContentView.swift */; };
 		1505EA2225C888FE009A9DE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1505EA2125C888FE009A9DE5 /* Preview Assets.xcassets */; };
 		1510DC6025E3367C005E5BBF /* UploadTweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1510DC5F25E3367C005E5BBF /* UploadTweetViewModel.swift */; };
+		1510DC6325E340D5005E5BBF /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1510DC6225E340D5005E5BBF /* FeedViewModel.swift */; };
+		1510DC6625E34135005E5BBF /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1510DC6525E34135005E5BBF /* Tweet.swift */; };
 		1515AC5B25DC903E000AF8F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1515AC5A25DC903E000AF8F2 /* GoogleService-Info.plist */; };
 		1515AC5F25DC918A000AF8F2 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 1515AC5E25DC918A000AF8F2 /* FirebaseFunctions */; };
 		1515AC6125DC918A000AF8F2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1515AC6025DC918A000AF8F2 /* FirebaseStorage */; };
@@ -56,6 +58,8 @@
 		1505EA2125C888FE009A9DE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1505EA2325C888FE009A9DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1510DC5F25E3367C005E5BBF /* UploadTweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetViewModel.swift; sourceTree = "<group>"; };
+		1510DC6225E340D5005E5BBF /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		1510DC6525E34135005E5BBF /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		1515AC5A25DC903E000AF8F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1515AC6825DCD7E6000AF8F2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		151958F225E1FABE00D2627E /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 			children = (
 				1588BC6025D1070C0070901F /* Message.swift */,
 				1564643225DE31E30041E28B /* User.swift */,
+				1510DC6525E34135005E5BBF /* Tweet.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				152E6C9F25DF816900695BA3 /* SearchViewModel.swift */,
 				151958F225E1FABE00D2627E /* ProfileViewModel.swift */,
 				1510DC5F25E3367C005E5BBF /* UploadTweetViewModel.swift */,
+				1510DC6225E340D5005E5BBF /* FeedViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -330,6 +336,8 @@
 				1561890225D8E52D00339219 /* RegistrationView.swift in Sources */,
 				1588BC5825D0F8DC0070901F /* MessageInputView.swift in Sources */,
 				1505EA1D25C888FD009A9DE5 /* ContentView.swift in Sources */,
+				1510DC6625E34135005E5BBF /* Tweet.swift in Sources */,
+				1510DC6325E340D5005E5BBF /* FeedViewModel.swift in Sources */,
 				152E6CA325DF820B00695BA3 /* Constants.swift in Sources */,
 				15979C5D25CA586C00F1B024 /* FeedView.swift in Sources */,
 				153CB0D625D3A1D8004DE5F7 /* ProfileHeaderView.swift in Sources */,
