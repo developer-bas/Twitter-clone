@@ -21,8 +21,8 @@ struct FeedView: View {
             }
             
             Button(action: {
-                viewModel.signOut()
-//                isShowingNewTweerView.toggle()
+
+                isShowingNewTweerView.toggle()
             }, label: {
                 Image("tweet")
                     .resizable()
