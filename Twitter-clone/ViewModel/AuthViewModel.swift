@@ -47,7 +47,7 @@ class AuthViewModel: ObservableObject {
         
         storegeRef.putData(imageData, metadata: nil) { (_, error) in
             if let error = error {
-                print("DEBUG: Fail to upload image")
+                print("DEBUG: Fail to upload image \(error)")
                 return
             }
             
@@ -75,6 +75,7 @@ class AuthViewModel: ObservableObject {
     }
     func signOut(){
         self.userSession = nil
+        user = nil
         try? Auth.auth().signOut()
     }
     func fetchUser(){
