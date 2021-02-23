@@ -50,6 +50,7 @@
 		15979C8525CBBF2200F1B024 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15979C8425CBBF2200F1B024 /* SearchBar.swift */; };
 		15B73E1925D250AC00A530BB /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B73E1825D250AC00A530BB /* MessageView.swift */; };
 		15B73E1C25D253EE00A530BB /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B73E1B25D253EE00A530BB /* NewMessageView.swift */; };
+		15B9732125E5C07A00F802F1 /* TweetActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B9732025E5C07A00F802F1 /* TweetActionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 		15979C8425CBBF2200F1B024 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		15B73E1825D250AC00A530BB /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		15B73E1B25D253EE00A530BB /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		15B9732025E5C07A00F802F1 /* TweetActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetActionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			children = (
 				156188F225D4C60300339219 /* NewTweetView.swift */,
 				15915C0825E4CB9C00E6A86E /* TweetDetailView.swift */,
+				15B9732025E5C07A00F802F1 /* TweetActionView.swift */,
 			);
 			path = Tweets;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				1515AC6925DCD7E6000AF8F2 /* AuthViewModel.swift in Sources */,
 				152E6CA025DF816900695BA3 /* SearchViewModel.swift in Sources */,
 				1588BC6125D1070C0070901F /* Message.swift in Sources */,
+				15B9732125E5C07A00F802F1 /* TweetActionView.swift in Sources */,
 				153CB0D225D39D19004DE5F7 /* UserProfileView.swift in Sources */,
 				1564643325DE31E30041E28B /* User.swift in Sources */,
 				15979C8525CBBF2200F1B024 /* SearchBar.swift in Sources */,
