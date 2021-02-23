@@ -24,6 +24,7 @@ struct TweetCell: View {
                     HStack{
                         Text(tweet.fullname)
                             .font(.system(size: 14, weight: .semibold))
+                            .foregroundColor(.black)
                         Text("@\(tweet.username)  ")
                             .foregroundColor(.gray)
                         
@@ -34,6 +35,7 @@ struct TweetCell: View {
                         
                     }
                     Text(tweet.caption)
+                        .foregroundColor(.black)
                 }
             }
             .padding(.bottom)
