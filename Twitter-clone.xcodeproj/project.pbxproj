@@ -51,6 +51,7 @@
 		15B73E1925D250AC00A530BB /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B73E1825D250AC00A530BB /* MessageView.swift */; };
 		15B73E1C25D253EE00A530BB /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B73E1B25D253EE00A530BB /* NewMessageView.swift */; };
 		15B9732125E5C07A00F802F1 /* TweetActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B9732025E5C07A00F802F1 /* TweetActionView.swift */; };
+		15B9732425E5C42300F802F1 /* TweetActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B9732325E5C42300F802F1 /* TweetActionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,7 @@
 		15B73E1825D250AC00A530BB /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		15B73E1B25D253EE00A530BB /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		15B9732025E5C07A00F802F1 /* TweetActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetActionView.swift; sourceTree = "<group>"; };
+		15B9732325E5C42300F802F1 /* TweetActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetActionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,7 @@
 				151958F225E1FABE00D2627E /* ProfileViewModel.swift */,
 				1510DC5F25E3367C005E5BBF /* UploadTweetViewModel.swift */,
 				1510DC6225E340D5005E5BBF /* FeedViewModel.swift */,
+				15B9732325E5C42300F802F1 /* TweetActionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				15281A4C25DB849C0019709C /* ImagePicker.swift in Sources */,
 				1588BC5E25D103540070901F /* ChatBubble.swift in Sources */,
 				15979C6525CA5F9F00F1B024 /* TweetCell.swift in Sources */,
+				15B9732425E5C42300F802F1 /* TweetActionViewModel.swift in Sources */,
 				15B73E1C25D253EE00A530BB /* NewMessageView.swift in Sources */,
 				15915C0925E4CB9C00E6A86E /* TweetDetailView.swift in Sources */,
 				1515AC6925DCD7E6000AF8F2 /* AuthViewModel.swift in Sources */,
