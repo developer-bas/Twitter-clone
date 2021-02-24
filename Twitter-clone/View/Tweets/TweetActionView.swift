@@ -34,7 +34,7 @@ struct TweetActionView: View {
             })
             Spacer()
             Button(action: {
-                viewModel.likeTweet()
+                viewModel.didLike ? viewModel.unlikeTweet() :viewModel.likeTweet()
             }, label: {
                 Image(systemName: viewModel.didLike ? "heart.fill":"heart")
                     .font(.system(size: 16))
