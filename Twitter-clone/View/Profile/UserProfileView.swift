@@ -28,8 +28,9 @@ struct UserProfileView: View {
                 FilterButtonView(selectedOption: $selectedFilter)
                     .padding()
                 
-                ForEach(0..<9){ tweet in
-//                    TweetCell().padding(20)
+                ForEach(viewModel.likedTweets){ tweet in
+                    TweetCell(tweet: tweet)
+                        .padding()
                 }
             }
             .navigationTitle("Batman")
