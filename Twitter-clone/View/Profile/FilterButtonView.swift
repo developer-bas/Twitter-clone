@@ -10,13 +10,13 @@ import SwiftUI
 
 enum TweetFilterOption: Int, CaseIterable {
     case tweets
-    case replies
+    //case replies
     case likes
     
     var tittle: String{
         switch self {
         case .tweets: return "Tweets"
-        case .replies: return "Tweets & Replies"
+      //  case .replies: return "Tweets & Replies"
         case .likes: return "Likes"
         }
     }
