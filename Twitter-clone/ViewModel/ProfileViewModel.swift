@@ -22,6 +22,17 @@ class ProfileViewModel: ObservableObject {
         fetchLikedTweets()
     }
     
+    
+    func tweets(forFilter filter: TweetFilterOption)-> [Tweet]{
+        switch filter {
+        case .tweets: return userTweets
+        case .likes : return likedTweets
+        
+        }
+    }
+}
+
+extension ProfileViewModel {
     func follow(){
         guard let currentUid = Auth.auth().currentUser?.uid else {return}
         COLLECTION_FOLLOWING.document(currentUid).collection("user-following").document(user.id).setData([:]){ _ in
@@ -85,11 +96,18 @@ class ProfileViewModel: ObservableObject {
             }
         }
     }
-    func tweets(forFilter filter: TweetFilterOption)-> [Tweet]{
-        switch filter {
-        case .tweets: return userTweets
-        case .likes : return likedTweets
+    
+    func fetchUserStats(){
+        let followersRef = COLLECTION_FOLLOWERS.document(user.id).collection("user-followers")
+        let followingsRef = COLLECTION_FOLLOWERS.document(user.id).collection("user-following")
         
+        followersRef.getDocuments { (snapshot, _) in
+            guard let followersCount = snapshot?.documents.count else {return}
+            followingsRef.getDocuments { (snapshot, _) in
+                
+                guard let followingCount = snapshot?.documents.count else {return }
+                let stats = UserStates(followers: followersCount, following: followingCount)
+            }
         }
     }
 }
