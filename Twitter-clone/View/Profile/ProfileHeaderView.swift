@@ -10,9 +10,8 @@ import Kingfisher
 
 struct ProfileHeaderView: View {
     @State var selectedFilter: TweetFilterOption = .tweets
-    @Binding var isFollowed: Bool
-    let viewModel : ProfileViewModel
-    //let user : User
+    @ObservedObject var viewModel : ProfileViewModel
+    
     var body: some View {
         VStack{
             KFImage(URL(string: viewModel.user.profileImageUrl))
@@ -34,23 +33,23 @@ struct ProfileHeaderView: View {
                 
             HStack(spacing: 40){
                 VStack{
-                    Text("12")
+                    Text("\(viewModel.user.stats.followers)")
                         .font(.system(size: 16)).bold()
                     Text("Followers")
                         .font(.footnote)
                         .foregroundColor(.gray)
                 }
                 VStack{
-                    Text("0")
+                    Text("\(viewModel.user.stats.following)")
                         .font(.system(size: 16)).bold()
-                    Text("Followers")
+                    Text("Following")
                         .font(.footnote)
                         .foregroundColor(.gray)
                 }
             }
             .padding()
             
-            ProfileActionButtonView(viewModel: viewModel, isFollowed: $isFollowed)
+            ProfileActionButtonView(viewModel: viewModel)
             
 //            FilterButtonView(selectedOption: $selectedFilter)
 //                .padding()

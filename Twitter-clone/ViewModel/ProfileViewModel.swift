@@ -10,8 +10,7 @@ import Foundation
 import SwiftUI
 
 class ProfileViewModel: ObservableObject {
-    let user: User
-    @Published var isFollowed = false
+    @Published var user: User
     @Published var userTweets = [Tweet]()
     @Published var likedTweets = [Tweet]()
     
@@ -20,6 +19,7 @@ class ProfileViewModel: ObservableObject {
         checkIfUserisFollowed()
         fetchUserTweets()
         fetchLikedTweets()
+        fetchUserStats()
     }
     
     
@@ -37,7 +37,7 @@ extension ProfileViewModel {
         guard let currentUid = Auth.auth().currentUser?.uid else {return}
         COLLECTION_FOLLOWING.document(currentUid).collection("user-following").document(user.id).setData([:]){ _ in
             COLLECTION_FOLLOWERS.document(self.user.id).collection("user-followers").document(currentUid).setData([:]){_ in
-                self.isFollowed = true
+                self.user.isFollowed = true
             }
         }
     }
@@ -49,7 +49,7 @@ extension ProfileViewModel {
         
         followingRef.document(user.id).delete { (_) in
             followerRef.document(currentUid).delete { (_) in
-                self.isFollowed = false
+                self.user.isFollowed = false
             }
         }
         
@@ -58,11 +58,12 @@ extension ProfileViewModel {
     
     func checkIfUserisFollowed(){
         guard let currentUid = Auth.auth().currentUser?.uid else {return}
+        guard !user.isCurrentUser else {return}
         let followingRef = COLLECTION_FOLLOWING.document(currentUid).collection("user-following")
         followingRef.document(user.id).getDocument { (snapshot, _) in
             
             guard let isFollowed = snapshot?.exists else {return}
-            self.isFollowed = isFollowed
+            self.user.isFollowed = isFollowed
     
         }
     }
@@ -99,14 +100,14 @@ extension ProfileViewModel {
     
     func fetchUserStats(){
         let followersRef = COLLECTION_FOLLOWERS.document(user.id).collection("user-followers")
-        let followingsRef = COLLECTION_FOLLOWERS.document(user.id).collection("user-following")
+        let followingsRef = COLLECTION_FOLLOWING.document(user.id).collection("user-following")
         
         followersRef.getDocuments { (snapshot, _) in
             guard let followersCount = snapshot?.documents.count else {return}
             followingsRef.getDocuments { (snapshot, _) in
                 
                 guard let followingCount = snapshot?.documents.count else {return }
-                let stats = UserStates(followers: followersCount, following: followingCount)
+                self.user.stats = UserStates(followers: followersCount, following: followingCount)
             }
         }
     }

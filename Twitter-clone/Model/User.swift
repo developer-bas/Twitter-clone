@@ -17,6 +17,7 @@ struct User: Identifiable {
     
     var stats : UserStates
     
+    var isFollowed = false
     var isCurrentUser: Bool { return Auth.auth().currentUser?.uid == self.id }
     
     
