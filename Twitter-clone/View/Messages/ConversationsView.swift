@@ -12,19 +12,21 @@ struct ConversationsView: View {
     @State var isShowingNewMessageView = false
     @State var showChat = false
     
+    @ObservedObject  var viewModel = ConversationViewModel()
     var body: some View {
         ZStack(alignment: .bottomTrailing){
-            NavigationLink(
-                destination: ChatView(),
-                isActive: $showChat,
-                label: {
-                    
-                })
+//            NavigationLink(
+//                destination: ChatView(user: <#User#>),
+//                isActive: $showChat,
+//                label: {
+//
+//                })
             ScrollView{
                 LazyVStack{
-                    ForEach(0..<50) {  _ in
+                    ForEach(viewModel.recentMessages) { message in
+                        
                         NavigationLink(
-                            destination: ChatView(),
+                            destination: ChatView(user: message.user),
                             label: {
                                 ConversationCell()
                             })
