@@ -186,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				156188F725D4F7F000339219 /* Views */,
-				152E6CA225DF820B00695BA3 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -245,6 +244,7 @@
 				1588BC4625CC95900070901F /* Messages */,
 				1505EA1C25C888FD009A9DE5 /* ContentView.swift */,
 				15979C5C25CA586C00F1B024 /* FeedView.swift */,
+				152E6CA225DF820B00695BA3 /* Constants.swift */,
 				15979C6425CA5F9F00F1B024 /* TweetCell.swift */,
 				15979C8125CBB82100F1B024 /* SearchView.swift */,
 				15979C8425CBBF2200F1B024 /* SearchBar.swift */,
