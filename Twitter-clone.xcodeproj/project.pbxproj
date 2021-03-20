@@ -175,6 +175,7 @@
 		156188F125D4C5DB00339219 /* Tweets */ = {
 			isa = PBXGroup;
 			children = (
+				15979C6425CA5F9F00F1B024 /* TweetCell.swift */,
 				156188F225D4C60300339219 /* NewTweetView.swift */,
 				15915C0825E4CB9C00E6A86E /* TweetDetailView.swift */,
 				15B9732025E5C07A00F802F1 /* TweetActionView.swift */,
@@ -185,6 +186,7 @@
 		156188F625D4F7E300339219 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				152E6CA225DF820B00695BA3 /* Constants.swift */,
 				156188F725D4F7F000339219 /* Views */,
 			);
 			path = Utils;
@@ -238,17 +240,13 @@
 		15979C5A25CA581900F1B024 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				15EB78D62605B7E400A6355D /* Search */,
+				15EB78D52605B73300A6355D /* Main */,
 				156188FC25D8E4F100339219 /* Authenication */,
 				156188F125D4C5DB00339219 /* Tweets */,
 				153CB0D025D39CC7004DE5F7 /* Profile */,
 				1588BC4625CC95900070901F /* Messages */,
-				1505EA1C25C888FD009A9DE5 /* ContentView.swift */,
 				15979C5C25CA586C00F1B024 /* FeedView.swift */,
-				152E6CA225DF820B00695BA3 /* Constants.swift */,
-				15979C6425CA5F9F00F1B024 /* TweetCell.swift */,
-				15979C8125CBB82100F1B024 /* SearchView.swift */,
-				15979C8425CBBF2200F1B024 /* SearchBar.swift */,
-				1588BC4325CC8FA30070901F /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,6 +264,24 @@
 				154FDC2726000EEE0053FAD6 /* ConversationViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		15EB78D52605B73300A6355D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1505EA1C25C888FD009A9DE5 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		15EB78D62605B7E400A6355D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				1588BC4325CC8FA30070901F /* UserCell.swift */,
+				15979C8125CBB82100F1B024 /* SearchView.swift */,
+				15979C8425CBBF2200F1B024 /* SearchBar.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
